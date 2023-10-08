@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Farmer Helper contact information.">
+	<title>Contact</title>
+	<!-- icons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/FarmerHelper/leaflogo.svg">
+	<link rel="icon" type="image/png" sizes="16x16" href="/FarmerHelper/leaflogo.svg">
+	<meta name="msapplication-TileColor" content="#179a4f">
+	<meta name="theme-color" content="#ffffff">
+	<!-- css & js -->
+	<link type="text/css" rel="stylesheet" href="/contactsrc/common.css">
+	<link type="text/css" rel="stylesheet" href="/contactsrc/other.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="/contactsrc/fonts.css" rel="stylesheet">
+</head>
+
+<body ng-app="myApp" class="ng-scope">
+	<header>
+		<div><a href="FarmerHelper.html" style="display: flex"><img src="/FarmerHelper/blogo (1).png" alt="Logo"></a>
+			<nav>
+				<div id="topnav" class="topnav">
+					<a href="/FarmerHelper.html">Home</a>
+					<a href="/fhfeatures.htm">Features</a>
+					<a class="active" href="/fhContact.html">Contact</a>
+				</div>
+				<div class="icon nav"></div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="minitron" style="background-image: url('');">
+			<div>
+				<h1>Contact</h1>
+			</div>
+		</div>
+		<div>
+			<div class="contact">
+				<div>
+					<div class="info">
+						<div>
+							<img src="/contactsrc/phone.png" alt="Phone"><a href="tel:5036827226">503-682-7226</a>
+						</div>
+						<div>
+							<img src="/contactsrc/tollfree.png" alt="Toll Free"><a href="tel:8885752689">888-5-FHelper</a>
+						</div>
+						<div>
+							<img src="/contactsrc/email.png" alt="Email"><a href="mailto:info@FM.net">info@FM.net</a>
+						</div>
+						<div>
+							<img src="/contactsrc/mail.png" alt="Mailing Address">
+							<p>Mailing Address<br>PO Box 224<br>Bhubaneswar, Odisha</p>
+						</div>
+					</div>
+					<div id="contact-form" ng-controller="contactCtrl" class="ng-scope">
+						<h1>Got Questions?</h1>
+						<div>
+							<input type="text" name="name" placeholder="Enter name" required="" ng-model="name" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" fdprocessedid="k8jrd">
+							<input type="email" name="email" placeholder="Enter email" required="" ng-model="email" class="ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required" fdprocessedid="2zglsi">
+							<input type="text" name="subject" placeholder="Subject" required="" ng-model="subject" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" fdprocessedid="1n2cz">
+							<textarea name="message" rows="4" cols="25" required="" placeholder="Message" ng-model="message" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"></textarea>
+							<button type="submit" id="btnContactUs" ng-click="contact()" fdprocessedid="43gd7k">
+								Send Message
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div>
+				<h1>Be a part of Us! </h1><a href="fhjoin.htm">Join Us</a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<div>
+				<img width="120px" height="60px" src="/FarmerHelper/blogo (1).png" alt="PlantX Logo"><br>
+				<p>We simlify your farming journey</p>
+			</div>
+			<div>
+				<div>
+					<p>PO Box 224</p>
+					<p>BHubaneswar, Odisha</p>
+					<p>Phone: <a href="tel:5036827226">503-682-7226</a></p>
+					<p>Toll Free: <a href="tel:8885752689">888-5-FHelper</a></p>
+					<p>
+						Email:
+						<a href="mailto:info@FH.net">info@FH.net</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div style="justify-content: center; text-align: center;">
+				<p>©2022 C-Ware Inc. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body></html>
